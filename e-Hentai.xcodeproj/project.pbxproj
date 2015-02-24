@@ -40,6 +40,7 @@
 		01519AF11A3051280091C985 /* IPadPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01519AF01A3051280091C985 /* IPadPhotoViewController.xib */; };
 		01519AF51A3053BA0091C985 /* IPadDownloadManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01519AF41A3053BA0091C985 /* IPadDownloadManagerCell.xib */; };
 		015B89E819FF9B2500CFA9DE /* SupportKitLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 015B89E619FF9B2500CFA9DE /* SupportKitLocalizable.strings */; };
+		015D701C1A9C71E800C5BAAB /* FZNHT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 015D701B1A9C71E800C5BAAB /* FZNHT.TTF */; };
 		01622DE11A6F415F004D0632 /* DownloadedGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01622DDC1A6F415F004D0632 /* DownloadedGroupViewController.m */; };
 		01622DE41A6F418B004D0632 /* DownloadedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01622DE31A6F418B004D0632 /* DownloadedViewController.m */; };
 		0163E4721A3FD019007C3D58 /* DiveExHentai.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163E4711A3FD019007C3D58 /* DiveExHentai.m */; };
@@ -170,6 +171,7 @@
 		01519AF41A3053BA0091C985 /* IPadDownloadManagerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IPadDownloadManagerCell.xib; path = DownloadManagerViewController/DownloadManagerCell/IPadDownloadManagerCell.xib; sourceTree = "<group>"; };
 		015B89E419FF9AC900CFA9DE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		015B89E719FF9B2500CFA9DE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SupportKitLocalizable.strings"; sourceTree = "<group>"; };
+		015D701B1A9C71E800C5BAAB /* FZNHT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZNHT.TTF; sourceTree = "<group>"; };
 		01622DDC1A6F415F004D0632 /* DownloadedGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadedGroupViewController.m; sourceTree = "<group>"; };
 		01622DDF1A6F415F004D0632 /* DownloadedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadedViewController.h; sourceTree = "<group>"; };
 		01622DE31A6F418B004D0632 /* DownloadedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadedViewController.m; sourceTree = "<group>"; };
@@ -496,6 +498,14 @@
 			path = Hpple;
 			sourceTree = "<group>";
 		};
+		015D701A1A9C71E800C5BAAB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				015D701B1A9C71E800C5BAAB /* FZNHT.TTF */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		01622DDB1A6F415F004D0632 /* DownloadedGroupViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +763,7 @@
 		0199268F19ADDB83009F814B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				015D701A1A9C71E800C5BAAB /* fonts */,
 				0180D9131A0210A8002554FC /* images */,
 				015B89E619FF9B2500CFA9DE /* SupportKitLocalizable.strings */,
 				0199269019ADDB83009F814B /* e-Hentai-Info.plist */,
@@ -894,6 +905,7 @@
 				017A536C1A5ABF6F0032C032 /* IPadMainTableViewCell.xib in Resources */,
 				01519AF51A3053BA0091C985 /* IPadDownloadManagerCell.xib in Resources */,
 				0180D91F1A0212C8002554FC /* dropbox_copyrighted@2x.png in Resources */,
+				015D701C1A9C71E800C5BAAB /* FZNHT.TTF in Resources */,
 				017AE5C51A00D26A00317939 /* HentaiFilters.plist in Resources */,
 				0180D9271A02139F002554FC /* phone2@2x.png in Resources */,
 				0118081C19B6F06200FE0DA1 /* PhotoViewController.xib in Resources */,

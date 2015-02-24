@@ -44,13 +44,11 @@
             
             //除
         case 3:
-        {
             operator = @"/";
             answer = arc4random() % 30 + 1;
             field2 = arc4random() % 30 + 1;
             field1 = answer * field2;
             break;
-        }
             
         default:
             operator = nil;
@@ -67,11 +65,11 @@
     
     NSMutableArray *options = [NSMutableArray arrayWithObjects:[NSString stringWithFormat:@"%d", abs(answer)], [NSString stringWithFormat:@"%d", abs(fakeAnswer1)], [NSString stringWithFormat:@"%d", abs(fakeAnswer2)], [NSString stringWithFormat:@"%d", abs(fakeAnswer3)], nil];
     
-    for (int i=0; i<[options count]; i++) {
-        [options exchangeObjectAtIndex:arc4random()%[options count] withObjectAtIndex:arc4random()%[options count]];
+    for (int i = 0; i < [options count]; i++) {
+        [options exchangeObjectAtIndex:arc4random() % [options count] withObjectAtIndex:arc4random() % [options count]];
     }
     
-    return @{ @"options": options, @"answer": [NSString stringWithFormat:@"%d", abs(answer)], @"field1": [NSString stringWithFormat:@"%d", MAX(field1, field2)], @"field2": [NSString stringWithFormat:@"%d", MIN(field1, field2)], @"operator": operator};
+    return @{ @"options": options, @"answer": [NSString stringWithFormat:@"%d", abs(answer)], @"field1": [NSString stringWithFormat:@"%d", MAX(field1, field2)], @"field2": [NSString stringWithFormat:@"%d", MIN(field1, field2)], @"operator": operator };
 }
 
 @end

@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *field1Label;
 @property (weak, nonatomic) IBOutlet UILabel *operatorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *field2Label;
+@property (weak, nonatomic) IBOutlet UILabel *rightCountLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *answer1Button;
 @property (weak, nonatomic) IBOutlet UIButton *answer2Button;
