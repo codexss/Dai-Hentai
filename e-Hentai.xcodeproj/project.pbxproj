@@ -31,6 +31,9 @@
 		013F8F111A490D59002B8C47 /* HentaiSaveLibrary_HentaiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F8F101A490D59002B8C47 /* HentaiSaveLibrary_HentaiResult.m */; };
 		013F8F141A490DBA002B8C47 /* HentaiSaveLibrary_Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F8F131A490DBA002B8C47 /* HentaiSaveLibrary_Images.m */; };
 		013F8F171A490E06002B8C47 /* HentaiSaveLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F8F161A490E06002B8C47 /* HentaiSaveLibrary.m */; };
+		01414AD11A9C2FF9002C99E4 /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01414ACF1A9C2FF9002C99E4 /* PasswordViewController.m */; };
+		01414AD21A9C2FF9002C99E4 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01414AD01A9C2FF9002C99E4 /* PasswordViewController.xib */; };
+		01414AD61A9C3622002C99E4 /* MathGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01414AD51A9C3622002C99E4 /* MathGenerator.m */; };
 		0150034419B6E5E90055F47D /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150033919B6E5E90055F47D /* TFHpple.m */; };
 		0150034519B6E5E90055F47D /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150033B19B6E5E90055F47D /* TFHppleElement.m */; };
 		0150034619B6E5E90055F47D /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150033D19B6E5E90055F47D /* XPathQuery.m */; };
@@ -98,7 +101,6 @@
 		01A166EC19E28D5E00203360 /* NSDictionary+Hentai.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A166EB19E28D5E00203360 /* NSDictionary+Hentai.m */; };
 		01A907F01A493A96006F4179 /* HentaiCacheLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A907EF1A493A96006F4179 /* HentaiCacheLibrary.m */; };
 		01AD623E1A5797D500962CBD /* SettingV2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD623D1A5797D500962CBD /* SettingV2ViewController.m */; };
-		01B423211A44136400FAB920 /* Pgyer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4231F1A44136400FAB920 /* Pgyer.a */; };
 		01BB0FC11A6CDBBF002FEFC7 /* GroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BB0FC01A6CDBBF002FEFC7 /* GroupManager.m */; };
 		01BBD60119E3D428003538CF /* HentaiPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBD5FF19E3D428003538CF /* HentaiPhotoCell.m */; };
 		01BBD60219E3D428003538CF /* HentaiPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BBD60019E3D428003538CF /* HentaiPhotoCell.xib */; };
@@ -153,6 +155,11 @@
 		013F8F131A490DBA002B8C47 /* HentaiSaveLibrary_Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HentaiSaveLibrary_Images.m; sourceTree = "<group>"; };
 		013F8F151A490E06002B8C47 /* HentaiSaveLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HentaiSaveLibrary.h; sourceTree = "<group>"; };
 		013F8F161A490E06002B8C47 /* HentaiSaveLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HentaiSaveLibrary.m; sourceTree = "<group>"; };
+		01414ACE1A9C2FF9002C99E4 /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordViewController.h; sourceTree = "<group>"; };
+		01414ACF1A9C2FF9002C99E4 /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordViewController.m; sourceTree = "<group>"; };
+		01414AD01A9C2FF9002C99E4 /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		01414AD41A9C3622002C99E4 /* MathGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathGenerator.h; sourceTree = "<group>"; };
+		01414AD51A9C3622002C99E4 /* MathGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathGenerator.m; sourceTree = "<group>"; };
 		0150033819B6E5E90055F47D /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		0150033919B6E5E90055F47D /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		0150033A19B6E5E90055F47D /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -262,8 +269,6 @@
 		01A907EF1A493A96006F4179 /* HentaiCacheLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HentaiCacheLibrary.m; sourceTree = "<group>"; };
 		01AD623C1A5797D500962CBD /* SettingV2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingV2ViewController.h; path = SettingViewController/SettingV2ViewController.h; sourceTree = "<group>"; };
 		01AD623D1A5797D500962CBD /* SettingV2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingV2ViewController.m; path = SettingViewController/SettingV2ViewController.m; sourceTree = "<group>"; };
-		01B4231F1A44136400FAB920 /* Pgyer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Pgyer.a; sourceTree = "<group>"; };
-		01B423201A44136400FAB920 /* Pgyer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pgyer.h; sourceTree = "<group>"; };
 		01BB0FBF1A6CDBBF002FEFC7 /* GroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupManager.h; sourceTree = "<group>"; };
 		01BB0FC01A6CDBBF002FEFC7 /* GroupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupManager.m; sourceTree = "<group>"; };
 		01BBD5FE19E3D428003538CF /* HentaiPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HentaiPhotoCell.h; path = HentaiPhotoCell/HentaiPhotoCell.h; sourceTree = "<group>"; };
@@ -290,7 +295,6 @@
 				010E3AE119E3B94700B866FB /* SystemConfiguration.framework in Frameworks */,
 				010E3ADF19E3B93800B866FB /* MobileCoreServices.framework in Frameworks */,
 				016DADA619E3940C00E528BE /* Security.framework in Frameworks */,
-				01B423211A44136400FAB920 /* Pgyer.a in Frameworks */,
 				016DADA419E393EB00E528BE /* CoreMotion.framework in Frameworks */,
 				0131908E1A4A5C6B0056F2E6 /* libFlurry_6.0.0.a in Frameworks */,
 				016DADA219E393DF00E528BE /* CoreLocation.framework in Frameworks */,
@@ -438,6 +442,26 @@
 			path = HentaiSaveLibrary;
 			sourceTree = "<group>";
 		};
+		01414ACD1A9C2FC9002C99E4 /* PasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01414ACE1A9C2FF9002C99E4 /* PasswordViewController.h */,
+				01414ACF1A9C2FF9002C99E4 /* PasswordViewController.m */,
+				01414AD01A9C2FF9002C99E4 /* PasswordViewController.xib */,
+				01414AD31A9C360B002C99E4 /* MathGenerator */,
+			);
+			path = PasswordViewController;
+			sourceTree = "<group>";
+		};
+		01414AD31A9C360B002C99E4 /* MathGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				01414AD41A9C3622002C99E4 /* MathGenerator.h */,
+				01414AD51A9C3622002C99E4 /* MathGenerator.m */,
+			);
+			path = MathGenerator;
+			sourceTree = "<group>";
+		};
 		0150033319B6E5E90055F47D /* HentaiParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,7 +475,6 @@
 			isa = PBXGroup;
 			children = (
 				0131908B1A4A5C6B0056F2E6 /* Flurry */,
-				01B4231E1A44136400FAB920 /* Pgyer */,
 				019290161A25D6C70094B423 /* DaiPortal */,
 				016BBEF919B94E4F0015E11E /* FilesManager */,
 				016BBEFE19B94E4F0015E11E /* LightWeightPlist */,
@@ -712,6 +735,7 @@
 				0199269819ADDB83009F814B /* AppDelegate.m */,
 				01310BD31A00ABBC00C78DFE /* AppDelegate+SupportKit.h */,
 				01310BD41A00ABBC00C78DFE /* AppDelegate+SupportKit.m */,
+				01414ACD1A9C2FC9002C99E4 /* PasswordViewController */,
 				011AEA4E19DD28BA00A15CA5 /* SliderViewController */,
 				011AEA5219DD294200A15CA5 /* MenuViewController */,
 				0118080A19B6F06200FE0DA1 /* MainViewController */,
@@ -747,15 +771,6 @@
 			);
 			name = HentaiSettingManager;
 			path = SettingViewController/SettingManager;
-			sourceTree = "<group>";
-		};
-		01B4231E1A44136400FAB920 /* Pgyer */ = {
-			isa = PBXGroup;
-			children = (
-				01B4231F1A44136400FAB920 /* Pgyer.a */,
-				01B423201A44136400FAB920 /* Pgyer.h */,
-			);
-			path = Pgyer;
 			sourceTree = "<group>";
 		};
 		01BB0FBE1A6CDB51002FEFC7 /* GroupManager */ = {
@@ -889,6 +904,7 @@
 				0180D9201A0212C8002554FC /* dropbox_copyrighted@3x.png in Resources */,
 				0180D9301A0214AD002554FC /* delivery@3x.png in Resources */,
 				0180D92B1A02140E002554FC /* settings@2x.png in Resources */,
+				01414AD21A9C2FF9002C99E4 /* PasswordViewController.xib in Resources */,
 				01519AF11A3051280091C985 /* IPadPhotoViewController.xib in Resources */,
 				01BBD60219E3D428003538CF /* HentaiPhotoCell.xib in Resources */,
 				015B89E819FF9B2500CFA9DE /* SupportKitLocalizable.strings in Resources */,
@@ -962,6 +978,7 @@
 				0171C44C1A9C1D0100320AA8 /* DaiPortal+Sender.m in Sources */,
 				0150034419B6E5E90055F47D /* TFHpple.m in Sources */,
 				0199269919ADDB83009F814B /* AppDelegate.m in Sources */,
+				01414AD61A9C3622002C99E4 /* MathGenerator.m in Sources */,
 				0118081519B6F06200FE0DA1 /* FakeViewController.m in Sources */,
 				0118081B19B6F06200FE0DA1 /* PhotoViewController.m in Sources */,
 				01051A941A6CDE1A00DE3461 /* GroupSelectViewController.m in Sources */,
@@ -979,6 +996,7 @@
 				01BB0FC11A6CDBBF002FEFC7 /* GroupManager.m in Sources */,
 				013F8F171A490E06002B8C47 /* HentaiSaveLibrary.m in Sources */,
 				01D068E31A5AACF40062971E /* UIView+Hentai.m in Sources */,
+				01414AD11A9C2FF9002C99E4 /* PasswordViewController.m in Sources */,
 				016BBF1119B94E4F0015E11E /* LightWeightPlist.m in Sources */,
 				016BBF0B19B94E4F0015E11E /* FilesManager.m in Sources */,
 				016BBF0E19B94E4F0015E11E /* LightWeightPlist+FilePath.m in Sources */,

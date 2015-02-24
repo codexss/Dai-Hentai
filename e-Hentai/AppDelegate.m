@@ -12,6 +12,22 @@
 
 @implementation AppDelegate
 
+#pragma mark - PasswordViewControllerDelegate
+
+- (void)onPassed {
+    if (self.realWindow) {
+        [self.realWindow makeKeyAndVisible];
+    }
+    else {
+        self.realWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        HentaiNavigationController *hentaiNavigation = [[HentaiNavigationController alloc] initWithRootViewController:[SliderViewController new]];
+        hentaiNavigation.autoRotate = NO;
+        hentaiNavigation.hentaiMask = UIInterfaceOrientationMaskPortrait;
+        self.realWindow.rootViewController = hentaiNavigation;
+        [self.realWindow makeKeyAndVisible];
+    }
+}
+
 #pragma mark - app life cycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -32,23 +48,15 @@
     //display
     application.statusBarOrientation = UIDeviceOrientationPortrait;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    HentaiNavigationController *hentaiNavigation = [[HentaiNavigationController alloc] initWithRootViewController:[SliderViewController new]];
-    hentaiNavigation.autoRotate = NO;
-    hentaiNavigation.hentaiMask = UIInterfaceOrientationMaskPortrait;
-    self.window.rootViewController = hentaiNavigation;
+    PasswordViewController *passwordViewController = [PasswordViewController new];
+    passwordViewController.delegate = self;
+    self.window.rootViewController = passwordViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    [Pgyer lastestInformationByShortcut:@"DaiHentai" completion:^(NSDictionary *information) {
-        if ([information[@"appVersion"] floatValue] > [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"] floatValue]) {
-            [UIAlertView hentai_alertViewWithTitle:[NSString stringWithFormat:@"新版本 v%@ 通知", information[@"appVersion"]] message:information[@"appUpdateDescription"] cancelButtonTitle:@"我不想更新~ O3O" otherButtonTitles:@[@"麻煩幫我跳轉更新頁~ O3O"] onClickIndex:^(NSInteger clickIndex) {
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.pgyer.com/DaiHentai"]];
-            } onCancel:^{
-            }];
-        }
-    }];
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [self.window makeKeyAndVisible];
 }
 
 - (void)oldDataChecking {

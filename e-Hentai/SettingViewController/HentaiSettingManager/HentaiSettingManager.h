@@ -24,4 +24,7 @@
 + (void)storeSettings;
 + (NSMutableDictionary *)temporarySettings;
 
++ (void)storePassword;
++ (NSMutableDictionary *)temporaryPassword;
+
 @end

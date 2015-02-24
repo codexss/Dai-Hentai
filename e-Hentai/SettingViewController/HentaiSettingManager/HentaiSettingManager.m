@@ -85,4 +85,18 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
++ (void)storePassword {
+    [LightWeightPlist lwpSafe:^{
+        [LWPDictionary(@"Password") setDictionary:[self temporaryPassword]];
+        LWPForceWriteSpecific(@"Password");
+    }];
+}
+
++ (NSMutableDictionary *)temporaryPassword {
+    if (!objc_getAssociatedObject(self, _cmd)) {
+        objc_setAssociatedObject(self, _cmd, LWPDictionary(@"Password"), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 @end

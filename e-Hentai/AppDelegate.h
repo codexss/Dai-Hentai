@@ -10,9 +10,11 @@
 
 #import "HentaiNavigationController.h"
 #import "SliderViewController.h"
+#import "PasswordViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PasswordViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow *realWindow;
 
 @end
