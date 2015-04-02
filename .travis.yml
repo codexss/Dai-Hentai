@@ -1,0 +1,5 @@
+language: objective-c
+before_install:
+    - brew update
+script: xctool -workspace e-Hentai.xcworkspace -scheme e-Hentai -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 5,OS=7.1' test
+
