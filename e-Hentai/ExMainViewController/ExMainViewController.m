@@ -8,7 +8,7 @@
 
 #import "ExMainViewController.h"
 
-#import "DiveExHentai.h"
+#import "DiveExHentaiV2.h"
 
 @interface ExMainViewController ()
 
@@ -47,7 +47,7 @@
         if ([Account shared].username) {
             [SVProgressHUD show];
             @weakify(self);
-            [DiveExHentai diveByUserName:[Account shared].username password:[Account shared].password completion: ^(BOOL isSuccess) {
+            [DiveExHentaiV2 diveBy:[Account shared].username andPassword:[Account shared].password completion: ^(BOOL isSuccess) {
                 @strongify(self);
                 if (isSuccess) {
                     avoidPerformSelectorWarning([self performSelector:@selector(reloadDatas)];)
@@ -65,7 +65,7 @@
                 UITextField *password = [alertView textFieldAtIndex:1];
                 
                 [SVProgressHUD show];
-                [DiveExHentai diveByUserName:username.text password:password.text completion: ^(BOOL isSuccess) {
+                [DiveExHentaiV2 diveBy:username.text andPassword:password.text completion: ^(BOOL isSuccess) {
                     @strongify(self);
                     if (isSuccess) {
                         [Account shared].username = username.text;
