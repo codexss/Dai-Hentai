@@ -53,7 +53,6 @@
     configuration.HTTPAdditionalHeaders = [self additionalHeaders];
     
     [[[NSURLSession sessionWithConfiguration:configuration] dataTaskWithRequest:request completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSLog(@"===== %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             if (!error) {
